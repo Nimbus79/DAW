@@ -1,0 +1,53 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h1(style="text-align:center")= music.titulo
+            .w3-container
+                table.w3-table.w3-bordered
+                    tr
+                        th Chave Citação
+                        td= music._id
+                    if music.compositor
+                        tr
+                            th Compositor
+                            td= music.compositor
+                    tr
+                        th Tipo
+                        td= music.tipo
+                    if music.arranjo
+                        tr
+                            th Arranjo
+                            td= music.arranjo
+                    if music.instrumentos
+                        tr
+                            th(style="vertical-align:middle") Instrumentos
+                            td
+                                table.w3-bordered(class="table1")
+                                    tr
+                                        th Nome
+                                        th Path
+                                        th Voz
+                                        th Clave
+                                        th Afinação
+                                    each instr in music.instrumentos
+                                        tr
+                                            td= instr.nome
+                                            td= instr.partitura.path
+                                            if instr.partitura.voz
+                                                td(style="text-align:center")= instr.partitura.voz
+                                            else
+                                                td(style="text-align:center") -
+                                            if instr.partitura.clave
+                                                 td(style="text-align:center")= instr.partitura.clave
+                                            else
+                                                td(style="text-align:center") -
+                                            if instr.partitura.afinacao
+                                                td(style="text-align:center")= instr.partitura.afinacao
+                                            else
+                                                td(style="text-align:center") -
+            footer.w3-container.w3-light-grey
+                address(style="text-align:center")
+                    a(href="http://localhost:7900/index") Voltar à página principal
