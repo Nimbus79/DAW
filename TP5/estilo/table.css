@@ -1,0 +1,14 @@
+.table1 {
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+.table1 td {
+    border: 1px solid #dddddd;
+}
+.table1 th {
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+.table1 tr:first-child th {
+    background-color: #dddddd;
+}
