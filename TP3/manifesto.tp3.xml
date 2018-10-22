@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto>
+    <meta>
+        <identificador>TPC3</identificador>
+        <título>Livro de Mórmon</título>
+        <subtítulo></subtítulo>
+        <dinício>02/10/2018</dinício>
+        <dfim>08/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Ana Catarina Gomes Rodrigues</nome>
+            <email>a78763@alunos.uminho.pt</email>
+            <identificador>A78763</identificador>
+            <website></website>
+            <foto path="a78763.jpeg"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>Este documento diz respeito ao processo de criação de páginas html acerca do 
+            <i>Livro de Mórmon</i>, usando como auxílio o ficheiro xml fornecido. 
+        </para>
+        <para>
+            Inicialmente, foi criado o index.html, com um índice com ligações para as restantes 
+            páginas html, sendo essas, no total, 16, correspondendo ao número de livros e suras 
+            do <i>Livro de Mórmon</i>.
+        </para>
+        <para>Em cada página html, colocou-se todos os capítulos do livro/sura correspondente, 
+            assim como um índice para os mesmos. Também, para facilitar a navegação pelas 
+            páginas, foram criados 2 botões, um para regressar ao topo da página e outro para 
+            regressar à página principal (index.html).
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="manifesto.xsl">manifesto.xsl</resultado>
+        <resultado url="manifesto.tp3.xml">manifesto.tp3.xml</resultado>
+        <resultado url="manifesto.tp3.html">manifesto.tp3.html</resultado>
+        <resultado url="bom.xsl">bom.xsl</resultado>
+        <resultado url="website/index.html">index.html</resultado>
+    </resultados>
+</manifesto>
