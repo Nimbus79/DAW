@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto>
+    <meta>
+        <identificador>TPC5</identificador>
+        <título>Obras musicais</título>
+        <subtítulo></subtítulo>
+        <dinício>16/10/2018</dinício>
+        <dfim>22/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Ana Catarina Gomes Rodrigues</nome>
+            <email>a78763@alunos.uminho.pt</email>
+            <identificador>A78763</identificador>
+            <website></website>
+            <foto path="a78763.jpeg"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>Este documento diz respeito ao processo de criação de páginas <i>web</i>, 
+            interligadas com o índice, usando a ferramenta <i>pug</i> para a criação dos 
+            <i>templates</i>.
+        </para>
+        <para>Para facilitar a criação do índice das obras musicais, foi escrito, em 
+            <i>javascript</i>, um programa para gerar o ficheiro <i>index.json</i>, com os 
+            nomes dos compositores e suas obras musicais. Para isso, foi necessário percorrer 
+            todos os ficheiros <i>json</i>, retirar a informação referida anteriormente, 
+            ordená-la alfabeticamente pelo nome do compositor e guardá-la, por último, no 
+            <i>index.json</i>.
+        </para>
+        <para>Por fim, fez-se o servidor a atender os pedidos na porta 7900 e, com o auxílio à 
+            ferramenta <i>pug</i>, criou-se os templates das páginas individuais (obras musicais) 
+            e do index.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="manifesto-tp5.xml">manifesto-tp5.xml</resultado>
+        <resultado url="manifesto-tp5.html">manifesto-tp5.html</resultado>
+        <resultado url="https://github.com/Nimbus79/DAW/tree/master/TP5">tp5</resultado>
+    </resultados>
+</manifesto>
