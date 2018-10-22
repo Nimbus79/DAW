@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT pagina (menu,tabela,corpo,contactos) >
+
+<!ELEMENT menu (elemento+) >
+<!ELEMENT elemento (#PCDATA) >
+<!ATTLIST elemento
+            url CDATA #REQUIRED
+            texto CDATA #IMPLIED>
+            
+<!ELEMENT tabela (pesquisa,codigos) >
+<!ELEMENT pesquisa EMPTY >
+<!ATTLIST pesquisa
+            descrição CDATA #IMPLIED>
+<!ELEMENT codigos (codigo+) >
+<!ELEMENT codigo (#PCDATA|codigo)* >
+<!ATTLIST codigo
+            url CDATA #REQUIRED>
+            
+<!ELEMENT corpo (nome,apresentação,descritivo,contexto,decisões) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT apresentação (estado,classe,código,título) >
+<!ELEMENT estado (#PCDATA) >
+<!ELEMENT classe (#PCDATA|link)* >
+<!ELEMENT link (#PCDATA) >
+<!ATTLIST link
+            url CDATA #REQUIRED>
+<!ELEMENT código (#PCDATA) >
+<!ELEMENT título (#PCDATA|b)* >
+<!ELEMENT b (#PCDATA) >
+
+<!ELEMENT descritivo (descrição,notasAplicação,exemplos,notasExclusão,termos) >
+<!ELEMENT descrição (#PCDATA) >
+<!ELEMENT notasAplicação (lista) >
+<!ELEMENT lista (item)* >
+<!ELEMENT item (#PCDATA|link|b|lista)* >
+<!ELEMENT exemplos (lista) >
+<!ELEMENT notasExclusão (lista) >
+<!ELEMENT termos (lista) >
+
+<!ELEMENT contexto (tipo,processo,donos,tipoIntervenção,processos,legislação) >
+<!ELEMENT tipo (#PCDATA) >
+<!ELEMENT processo (#PCDATA) >
+<!ELEMENT donos (lista) >
+<!ELEMENT tipoIntervenção (lista) >
+<!ELEMENT processos (lista) >
+<!ELEMENT legislação (lista) >
+
+<!ELEMENT decisões (prazoCA,destinoF) >
+<!ELEMENT prazoCA (título,prazo,forma,justificação) >
+<!ELEMENT prazo (#PCDATA) >
+<!ELEMENT forma (#PCDATA) >
+<!ELEMENT justificação (critério+) >
+<!ELEMENT critério (b,para) >
+<!ELEMENT para (#PCDATA|link)* >
+
+<!ELEMENT destinoF (título,destino,justificação) >
+<!ELEMENT destino (#PCDATA) >
+
+<!ELEMENT contactos (website,email) >
+<!ELEMENT website (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+

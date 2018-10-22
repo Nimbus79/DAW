@@ -1,0 +1,115 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+   </head><style>
+                .dropbtn {
+                background-color: #3498DB;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                }
+                .dropdown {
+                position: relative;
+                display: inline-block;
+                }
+                .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                }
+                .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                }
+                .dropdown-content a:hover {
+                background-color: #f1f1f1
+                }
+                .dropdown:hover .dropdown-content {
+                display: block;
+                }
+                .dropdown:hover .dropbtn {
+                background-color: #2980B9;
+                }
+            </style><body>
+      
+      <h1 style="text-align:center;">Manifesto</h1>
+      <div class="dropdown" style="margin-left: 47%;"><button class="dropbtn">Índice</button><div class="dropdown-content"><a href="#1">Equipa</a><a href="#2">Resumo</a><a href="#3">Resultados</a></div>
+      </div>
+      <hr>
+      <p><b>Título: </b>TPC2 - Processamento de matrículas ou inscrições no ensino ou em formação
+      </p>
+      <p><b>Data de início: </b>26/09/2018
+      </p>
+      <p><b>Data de fim: </b>01/10/2018
+      </p>
+      <form action="mailto:jcr@di.uminho.pt">
+         <p><b>Supervisor: </b><a href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</a><input type="submit" value="Enviar correio" style="margin:5px"></p>
+      </form>
+      <hr>
+      
+      <hr>
+      <h2><a name="1">Equipa</a></h2>
+      <ol>
+         <li>
+            <div style="display:inline"><img src="foto.jpeg" align="left" style="margin-left:5px" width="8.5%" height="15.5%"></div>
+            <div style="display:inline;">
+               <p><b>Nome: </b>Ana Catarina Gomes Rodrigues
+               </p>
+               <p><b>Número: </b>A78763
+               </p>
+               <p><b>Email: </b><a href="mailto:a78763@alunos.uminho.pt">a78763@alunos.uminho.pt</a></p>
+            </div>
+            <div style="float: none; clear: both;"></div>
+         </li>
+      </ol>
+      <hr>
+      
+      <hr>
+      <h2><a name="2">Resumo</a></h2>
+      <p>Este documento diz respeito ao processo de criação de dois <b>DTDs 
+            <i>(Document Type Definition)</i></b>, um com base na 
+         <a href="http://clav.dglab.gov.pt/classes/consultar/c750.10.002">página</a> 
+         acerca do Processamento de matrículas ou inscrições no ensino ou em
+         formação e outro com base no seguinte 
+         <a href="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">documento</a>. 
+         
+      </p>
+      <p>
+         A partir do último DTD, foram também criados os respetivos ficheiros 
+         <b>XML <i>(Extensible Markup Language)</i></b>, 
+         <b>XSL <i>(Extensible Stylesheet Language)</i></b> e 
+         <b>HTML <i>(HyperText Markup Language)</i></b>, sendo este último o presente
+         documento.
+         
+      </p>
+      <p>Para obter os ficheiros referidos, foi, então, necessária a identificação 
+         de cada componente da página/documento, assim como a identificação dos 
+         seus respetivos atributos. Com isso, foi possível a elaboração do DTD, 
+         seguida da criação do XML, que teve como base este primeiro.
+         Por fim, foi escrito o XSL com os comandos necessários para a criação da página 
+         HTML com a informação contida no XML, estando estes documentos na secção
+         seguinte.
+         
+      </p>
+      <hr>
+      
+      <hr>
+      <h2><a name="3">Resultados</a></h2>
+      <ul>
+         <li><a href="manifesto.dtd">manifesto.dtd</a></li>
+         <li><a href="manifesto.xsl">manifesto.xsl</a></li>
+         <li><a href="manifesto.tp2.xml">manifesto.tp2.xml</a></li>
+         <li><a href="manifesto.tp2.html">manifesto.tp2.html</a></li>
+         <li><a href="pn.dtd">pn.dtd</a></li>
+      </ul>
+      
+   </body>
+</html>

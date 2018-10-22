@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "manifesto.dtd">
+<manifesto>
+    <meta>
+        <identificador>TPC2</identificador>
+        <título>Processamento de matrículas ou inscrições no ensino ou em formação</título>
+        <subtítulo></subtítulo>
+        <dinício>26/09/2018</dinício>
+        <dfim>01/10/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Ana Catarina Gomes Rodrigues</nome>
+            <email>a78763@alunos.uminho.pt</email>
+            <identificador>A78763</identificador>
+            <website></website>
+            <foto path="foto.jpeg"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>Este documento diz respeito ao processo de criação de dois <b>DTDs 
+            <i>(Document Type Definition)</i></b>, um com base na 
+            <a href="http://clav.dglab.gov.pt/classes/consultar/c750.10.002">página</a> 
+            acerca do Processamento de matrículas ou inscrições no ensino ou em
+            formação e outro com base no seguinte 
+            <a href="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">documento</a>. 
+        </para>
+        <para>
+            A partir do último DTD, foram também criados os respetivos ficheiros 
+            <b>XML <i>(Extensible Markup Language)</i></b>, 
+            <b>XSL <i>(Extensible Stylesheet Language)</i></b> e 
+            <b>HTML <i>(HyperText Markup Language)</i></b>, sendo este último o presente
+            documento.
+        </para>
+        <para>Para obter os ficheiros referidos, foi, então, necessária a identificação 
+            de cada componente da página/documento, assim como a identificação dos 
+            seus respetivos atributos. Com isso, foi possível a elaboração do DTD, 
+            seguida da criação do XML, que teve como base este primeiro.
+            Por fim, foi escrito o XSL com os comandos necessários para a criação da página 
+            HTML com a informação contida no XML, estando estes documentos na secção
+            seguinte.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="manifesto.dtd">manifesto.dtd</resultado>
+        <resultado url="manifesto.xsl">manifesto.xsl</resultado>
+        <resultado url="manifesto.tp2.xml">manifesto.tp2.xml</resultado>
+        <resultado url="manifesto.tp2.html">manifesto.tp2.html</resultado>
+        <resultado url="pn.dtd">pn.dtd</resultado>
+    </resultados>
+</manifesto>
