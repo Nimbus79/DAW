@@ -1,0 +1,137 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   </head><style>
+                .dropbtn {
+                background-color: #3498DB;
+                color: white;
+                padding: 12px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                }
+                .dropdown {
+                position: relative;
+                display: inline-block;
+                }
+                .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                }
+                .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                }
+                .dropdown-content a:hover {
+                background-color: #f1f1f1
+                }
+                .dropdown:hover .dropdown-content {
+                display: block;
+                }
+                .dropdown:hover .dropbtn {
+                background-color: #2980B9;
+                }
+                body {
+                background-color: #e6e6e7;
+                }
+                hr { 
+                display: block;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 1px;
+                } 
+                a:visited {
+                color: blue;
+                }
+                a:hover {
+                color: red;
+                }
+            </style><body>
+      <div class="w3-margin">
+         
+         <h1 style="text-align:center;">Manifesto</h1>
+         <div class="dropdown" style="margin-left: 47%;"><button class="dropbtn">Índice</button><div class="dropdown-content"><a href="#1">Equipa</a><a href="#2">Resumo</a><a href="#3">Resultados</a></div>
+         </div>
+         <div class="w3-panel w3-border w3-round-large w3-light-grey">
+            <p><b>Título: </b>TPC6 - Lista de Tarefas
+            </p>
+            <p><b>Subtítulo: </b>Utilização de Formulários
+            </p>
+            <p><b>Data de início: </b>23/10/2018
+            </p>
+            <p><b>Data de fim: </b>29/10/2018
+            </p>
+            <form action="mailto:jcr@di.uminho.pt">
+               <p><b>Supervisor: </b><a href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</a><input type="submit" value="Enviar correio" style="margin:5px"></p>
+            </form>
+         </div>
+         
+         <div class="w3-panel w3-border w3-round-large w3-light-grey">
+            <h2><a name="1">Equipa</a></h2>
+            <ol>
+               <li>
+                  <div style="display:inline"><img src="a78763.jpeg" class="w3-border" align="left" style="padding:4px;margin-left:5px" width="9.5%" height="17%"></div>
+                  <div style="display:inline;">
+                     <p><b>Nome: </b>Ana Catarina Gomes Rodrigues
+                     </p>
+                     <p><b>Número: </b>A78763
+                     </p>
+                     <p><b>Email: </b><a href="mailto:a78763@alunos.uminho.pt">a78763@alunos.uminho.pt</a></p>
+                  </div>
+                  <div style="float: none; clear: both;"></div>
+               </li><br></ol>
+         </div>
+         
+         <div class="w3-panel w3-border w3-round-large w3-light-grey">
+            <h2><a name="2">Resumo</a></h2>
+            <p>Este documento diz respeito ao processo de criação de páginas <i>web</i>, para a 
+               gestão de tarefas, usando a ferramenta <i>pug</i> para a criação dos 
+               <i>templates</i>.
+               
+            </p>
+            <p>Para se conseguir uma melhor gestão das tarefas por parte do utilizador, foram 
+               colocadas, na página principal, 4 opções: registar, consultar, apagar e concluir 
+               tarefas. Após o registo, remoção ou conclusão de uma tarefa, é mostrada uma página
+               
+               com as informações dessa mesma tarefa, em caso de sucesso.
+               
+            </p>
+            <p>De modo a facilitar a remoção de uma tarefa, antes de esta ser inserida na base de
+               
+               dados após o seu registo, é-lhe atribuída um identificador, único para cada tarefa.
+               
+               Assim, quando uma tarefa é apagada, basta procurá-la na base de dados pelo seu 
+               <i>id</i> e mudar a variável <i>apagar</i> para o valor "sim".
+               
+            </p>
+            <p>Caso o utilizador tente aceder a uma página que não esteja implementada ou, por 
+               algum motivo, ocorra qualquer falha, quer na leitura da BD quer no método pedido,
+               é 
+               aberta uma página de erro.
+               
+            </p>
+         </div>
+         
+         <div class="w3-panel w3-border w3-round-large w3-light-grey">
+            <h2><a name="3">Resultados</a></h2>
+            <ul>
+               <li><a href="manifesto-tp6.xml">manifesto-tp6.xml</a></li>
+               <li><a href="manifesto-tp6.html">manifesto-tp6.html</a></li>
+               <li><a href="https://github.com/Nimbus79/DAW/tree/master/TP6">tp6</a></li>
+            </ul>
+         </div>
+         
+      </div>
+   </body>
+</html>
