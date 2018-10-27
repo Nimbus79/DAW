@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4.w3-light-grey
+            header.w3-container.w3-teal
+                h3.w3-center Lista de Tarefas
+            .w3-container
+                h3 Pendentes
+            .w3-container
+                table.w3-table.w3-border.w3-bordered.w3-white(class="table")
+                    tr
+                        th Data de registo
+                        th Prazo
+                        th Descrição
+                        th Tipo
+                    each task in lista
+                        if (task.estado == 'Pendente' && task.apagar == 'nao')
+                            tr
+                                td= task.data
+                                td= task.prazo
+                                td= task.desc
+                                td= task.tipo
+            br
+            .w3-container
+                h3 Concluídas
+            .w3-container
+                table.w3-table.w3-border.w3-bordered.w3-white(class="table")
+                    tr
+                        th Data de registo
+                        th Prazo
+                        th Descrição
+                        th Tipo
+                    each task in lista
+                        if (task.estado == 'Concluída' && task.apagar == 'nao')
+                            tr
+                                td= task.data
+                                td= task.prazo
+                                td= task.desc
+                                td= task.tipo
+            br
+            footer.w3-container.w3-teal
+                address.w3-center 
+                    a(href='/') Voltar à página principal

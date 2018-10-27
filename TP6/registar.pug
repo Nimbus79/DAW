@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3.w3-center Registar Nova Tarefa
+            form.w3-container.w3-card-4.w3-light-grey(action='/registada' method='POST')
+                div.w3-row.w3-section
+                    div.w3-rest
+                        input.w3-input.w3-border(placeholder="Data de registo" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="data")           
+                div.w3-row.w3-section
+                    div.w3-rest
+                        input.w3-input.w3-border(placeholder="Prazo" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="prazo")
+                div.w3-row.w3-section
+                    div.w3-rest
+                        input.w3-input.w3-border(type="text" name="desc" placeholder="Descrição")
+                div.w3-row.w3-section
+                    div.w3-rest
+                        select.w3-select.w3-border(name="tipo" style="background-color:white" required)
+                            option(value="" disabled selected hidden) Tipo
+                            option(value="Doméstica") Doméstica
+                            option(value="Escolar") Escolar
+                            option(value="Profissional") Profissional
+                            option(value="Pessoal") Pessoal
+                            option(value="Outro") Outro
+                input(type="hidden" name="estado" value="Pendente")
+                input(type="hidden" name="apagar" value="nao")
+                div.w3-center
+                    input.w3-btn.w3-center.w3-teal.w3-section(type='submit' value='Registar')
+            footer.w3-container.w3-teal
+                address.w3-center 
+                    a(href='/') Voltar à página principal

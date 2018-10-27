@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4.w3-light-grey
+            header.w3-container.w3-teal
+                h3.w3-center Lista de Tarefas Pendentes
+            table.w3-table.w3-border.w3-bordered.w3-white(class="table")
+                tr
+                    th(width="22%") Data de registo
+                    th(width="22%") Prazo
+                    th(width="22%") Descrição
+                    th(width="22%") Tipo
+                    th(width="12%")
+                each task in lista
+                    if (task.apagar == 'nao' && task.estado == 'Pendente')
+                        form(action='/concluida' method='POST') 
+                            table.w3-table.w3-border.w3-bordered.w3-white(class="table")
+                                tr
+                                    td(width="22%")= task.data
+                                        input(type="hidden" name="data" value=task.data)
+                                    td(width="22%")= task.prazo
+                                        input(type="hidden" name="prazo" value=task.prazo)
+                                    td(width="22%")= task.desc
+                                        input(type="hidden" name="desc" value=task.desc)
+                                    td(width="22%")= task.tipo
+                                        input(type="hidden" name="tipo" value=task.tipo)
+                                    td(width="12%")
+                                        input(type="hidden" name="id" value=task.id)
+                                        input(type="submit" value="Concluir")
+            footer.w3-container.w3-teal
+                address.w3-center 
+                    a(href='/') Voltar à página principal

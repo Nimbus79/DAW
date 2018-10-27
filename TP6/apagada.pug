@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-green
+                h3.w3-center Tarefa Apagada
+            table.w3-table-all
+                tr
+                    th Data de Registo
+                    td= tarefa.data
+                tr
+                    th Prazo
+                    td= tarefa.prazo
+                tr
+                    th Descrição
+                    td= tarefa.desc
+                tr
+                    th Tipo
+                    td= tarefa.tipo
+                tr
+                    th Estado
+                    td= tarefa.estado
+            footer.w3-container.w3-green
+                address.w3-center
+                    a(href='/' style="text-align:left") Voltar à página principal
+                    br
+                    a(href='/apagar' style="text-align:right") Voltar à página anterior
