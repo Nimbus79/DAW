@@ -43,7 +43,7 @@ app.get('/w3.css', (req, res) => {
     })
 })
 
-app.post('/processaForm', (req, res) => {
+app.post('/', (req, res) => {
     var form = new formidable.IncomingForm()
     form.parse(req, (erro, fields, files) => {
         var fenviado = files.ficheiro.path
