@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto>
+    <meta>
+        <identificador>TPC8</identificador>
+        <título>Upload de Ficheiros</título>
+        <subtítulo>Utilização do Ajax</subtítulo>
+        <dinício>06/11/2018</dinício>
+        <dfim>12/11/2018</dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Ana Catarina Gomes Rodrigues</nome>
+            <email>a78763@alunos.uminho.pt</email>
+            <identificador>A78763</identificador>
+            <website></website>
+            <foto path="a78763.jpeg"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>Este documento diz respeito ao processo de criação de uma página <i>web</i> para 
+            o <i>upload</i> de ficheiros.
+        </para>
+        <para>Inicialmente, foram criadas duas secções na página, uma para o <i>upload</i> e 
+            outra com a lista dos ficheiros submetidos.
+        </para>
+        <para>De modo a facilitar a criação da lista referida anteriormente, sempre que é feito 
+            o <i>upload</i> de um ficheiro, as informações deste são guardadas num ficheiro 
+            <i>json</i> e, simultaneamente, estas são colocadas na lista através de uma função 
+            em <i>jquery</i>.
+        </para>
+        <para>Por fim, o servidor foi criado com recurso à <i>framework express</i> do 
+            <i>node.js</i>, a atender pedidos na porta 7900.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="manifesto-tp8.xml">manifesto-tp8.xml</resultado>
+        <resultado url="manifesto-tp8.html">manifesto-tp8.html</resultado>
+        <resultado url="https://github.com/Nimbus79/DAW/tree/master/TP8">tp8</resultado>
+    </resultados>
+</manifesto>
