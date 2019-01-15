@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifesto>
+    <meta>
+        <identificador>Teste</identificador>
+        <título></título>
+        <subtítulo></subtítulo>
+        <dinício>15/01/2019</dinício>
+        <dfim></dfim>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <email>jcr@di.uminho.pt</email>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Ana Catarina Gomes Rodrigues</nome>
+            <email>a78763@alunos.uminho.pt</email>
+            <identificador>A78763</identificador>
+            <website></website>
+            <foto path="a78763.jpeg"/>
+        </membro>
+    </equipa>
+    <resumo>
+        <para>
+            O teste é composto por dois exercícios: Compositores musicais e CLAV.
+        </para>
+        <para>
+            No primeiro exercício foi convertido o ficheiro XML num ficheiro JSON e, de seguida,
+            os dados desse ficheiro JSON foram importados para o mongo.
+            Para aceder às funcionalidades pedidas, como listar os compositores, basta entrar no link 
+            <i>http://localhost:3001/</i>.
+            Para testar o programa foi utilizado o <i>Postman</i>, sendo também necessário ter o 
+            mongo a correr.
+        </para>
+        <para>
+            Na primeira parte do segundo exercício era pedido a realização de três queries, embora só
+            tenha sido conseguida, com sucesso, a segunda.
+            Na segunda parte do exercício foi criada uma interface com as informações das classes da CLAV.
+            Em cada página da classe encontrava-se um link para regressar à página princial 
+            (<i>http://localhost:3002/</i>), assim como toda a informação relevante dessa mesma 
+            classe.
+            Para conseguir realizar este exercício foi necessário obter os dados, através do <i>axios</i>.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="https://github.com/Nimbus79/DAW/tree/master/Teste">teste</resultado>
+    </resultados>
+</manifesto>
