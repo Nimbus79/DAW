@@ -9,7 +9,7 @@
   "author": "nimbus",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "formidable": "^1.2.1",
     "jsonfile": "^5.0.0",
     "morgan": "^1.9.1",
